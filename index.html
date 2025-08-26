@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B12-A5-Emergency-Hotline</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <h1>Hi</h1>
+    <header>
+        <nav class="flex  justify-between items-center p-6">
+            <div class="flex justify-between items-center gap-1">
+                <img src="./assets/logo.png" alt="" class="w-12">
+                <h3>Emergency <br> Service</h3>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+                <!-- heart -->
+                <div class="flex justify-center items-center gap-1">
+                    <span class="heart-count">0</span>
+                    <img src="./assets/heart.png" alt="" class="w-7">
+                </div>
+                <!-- coin -->
+                <div class="flex justify-center items-center gap-1">
+                    <span class="coin-count">100</span>
+                    <img src="./assets/coin.png" alt="" class="w-6">
+                </div>
+                <!-- copy -->
+                <div class="flex justify-center items-center gap-1">
+                    <span class="copy-count">0</span>
+                    <span>Copy</span>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section class="bg-gradient-to-l from-[#013223] via-[#006747] to-[#013223] py-5">
+            <div class=" text-white text-center grid grid-row-3 justify-center items-center">
+                <img src="./assets/logo.png" alt="" class="mx-auto w-24">
+                <h1 class="text-4xl font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="py-6 text-[20px]">
+                    Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic
+                    of Bangladesh
+                </p>
+            </div>
+        </section>
+    </header>
+    <!-- card section -->
+    <main class="bg-[#f5fff6]  flex p-12 gap-7">
+
+        <!-- জাতীয় জরুরি সেবা -->
+        <aside class="card  w-9/12  grid grid-cols-3 col-span-3 gap-7 ">
+            <div class="bg-white shadow-md rounded-xl p-5">
+                <div class="flex justify-between items-center mt-4 ">
+                    <img src="./assets/emergency.png" alt="" class="w-14 p-2 rounded-2xl bg-[#FFE3E2]" />
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div>
+                    <h2 class="card-title m-0 text-[24px] font-bold mt-6">জাতীয় জরুরি সেবা</h2>
+                    <p class=" text-[18px] font-normal text-[#5C5C5C]">National Emergency</p>
+                    <span class="text-[32px] font-bold">999</span><br>
+                    <span class="  font-normal text-[#5C5C5C]  p-2 bg-[#F2F2F2] rounded-2xl">সার্বজনীন</span>
+                    <div class="flex gap-2 justify-center items-center  mt-6">
+                        <div class="card-actions justify-end ">
+                            <button class="btn  font-normal px-11 rounded-xl text-[#5C5C5C] 
+                            ">
+                                <i class="fa-solid fa-copy"></i>Copy</button>
+                        </div>
+                        <div class="card-actions justify-end ">
+                            <button class="btn  font-normal text-white px-11 rounded-xl bg-[#00A63E]">
+                                <i class="fa-solid fa-phone "></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </aside>
+        <!-- right section -->
+        <section class="w-3/12">
+            <div  class="flex justify-between border items-center">
+                <div>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </div>
+                <button class="btn  font-normal text-white px-11 rounded-xl bg-[#00A63E]">Clear</button>
+            </div>
+            <div class="flex justify-between border items-center">
+                <div>
+                    <h2>জাতীয় জরুরি সেবা</h2>
+                    <span>999</span>
+                </div>
+                <span>0</span>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
