@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body id="whole-body">
     <header>
         <nav class="flex  justify-between items-center p-6">
             <div class="flex justify-between items-center gap-1">
@@ -21,12 +21,12 @@
             </div>
             <div class="flex justify-center items-center gap-5">
                 <!-- heart -->
-                <div class="flex justify-center items-center gap-1">
+                <div class="available-heart flex justify-center items-center gap-1">
                     <span class="heart-count">0</span>
                     <img src="./assets/heart.png" alt="" class="w-7">
                 </div>
                 <!-- coin -->
-                <div class="flex justify-center items-center gap-1">
+                <div class="available-coin flex justify-center items-center gap-1">
                     <span class="coin-count">100</span>
                     <img src="./assets/coin.png" alt="" class="w-6">
                 </div>
@@ -53,15 +53,15 @@
     <main class="bg-[#f5fff6]  flex p-12 gap-7">
 
         <!-- জাতীয় জরুরি সেবা -->
-        <aside class="card  w-9/12  grid grid-cols-3 col-span-3 gap-7 ">
+        <aside id="card-container" class="  w-9/12  grid grid-cols-3 col-span-3 gap-7 ">
             <div id="emegency-card" class="bg-white shadow-md rounded-xl p-5">
                 <div class="flex justify-between items-center mt-4 ">
                     <img src="./assets/emergency.png" alt="" class="w-14 p-2 rounded-2xl bg-[#FFE3E2]" />
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart heart-btn"></i>
                 </div>
                 <div>
                     <h2 class="card-title m-0 text-[24px] font-bold mt-6">জাতীয় জরুরি সেবা</h2>
-                    <p id="card-sub" class=" text-[18px] font-normal text-[#5C5C5C]">National Emergency</p>
+                    <p id="" class="card-sub text-[18px] font-normal text-[#5C5C5C]">National Emergency</p>
                     <span class="text-[32px] font-bold">999</span><br>
                     <span class="  font-normal text-[#5C5C5C]  p-2 bg-[#F2F2F2] rounded-2xl">সার্বজনীন</span>
                     <div class="flex gap-2 justify-center items-center  mt-6">
@@ -80,24 +80,24 @@
             
         </aside>
         <!-- right section -->
-        <section class="w-3/12">
-            <div  class="flex justify-between border items-center">
+        <section id="right-container" class="w-3/12  bg-white">
+            <div  class="flex justify-between  items-center">
                 <div>
                     <i class="fa-solid fa-clock-rotate-left"></i>
                     <span>History</span>
                 </div>
                 <button class="btn  font-normal text-white px-11 rounded-xl bg-[#00A63E]">Clear</button>
             </div>
-            <div class="flex justify-between border items-center">
+            <!-- <div class="flex justify-between p-6 items-center ">
                 <div>
                     <h2>জাতীয় জরুরি সেবা</h2>
                     <span>999</span>
                 </div>
                 <span>0</span>
-            </div>
+            </div> -->
         </section>
     </main>
-    <script src="./script.js"></script>pt
+    <script src="./script.js"></script>
 
 </body>
 
