@@ -77,7 +77,7 @@ getElement('card-container').addEventListener('click', function (e) {
         const totalCopy = numberOfCopy + 1;
         availableCopy.innerText = totalCopy
         // console.log(totalHeart);
-        const findCopytext = copyBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[1].children[0].children[0].children[1].children[2];
+        const findCopytext = copyBtn.parentNode.parentNode.parentNode.children[2];
         const cardNumber = findCopytext.innerText;
         alert('নম্বর কপি হয়েছে : ' +cardNumber)
         navigator.clipboard.writeText(cardNumber)
