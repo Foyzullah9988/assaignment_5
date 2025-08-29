@@ -44,7 +44,6 @@ getElement('card-container').addEventListener('click', function (e) {
 
 
 
-
     }
     // heart 
     if (e.target.className.includes('heart-btn')) {
