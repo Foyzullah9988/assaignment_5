@@ -33,7 +33,7 @@ getElement('card-container').addEventListener('click', function (e) {
         newCard.innerHTML = `
             <div class="flex justify-between p-6 mb-2 items-center bg-[#FAFAFA] rounded-md">
                 <div>
-                    <h2>${cardSub}  </h2>
+                    <h2>${cardSub}</h2>
                     <span class="text-[#5C5C5C]">${cardNumber}</span>
                 </div>
                 <span>${new Date().toLocaleTimeString()}</span>
