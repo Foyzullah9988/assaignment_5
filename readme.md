@@ -23,13 +23,13 @@ querySelectorAll returns all matching elements as a nodelist.
 
 **create and insert a new element into the DOM**
 first i create a element using document.createElement,
-then i write a section or whatever i want to append 
+then i write a section or whatever i want using `` to append 
 and then i insert this new element into DOM with appendChild() / append().
 
 **Number - 3**
 
 **Event Bubbling**
-when a event happens with click or something it starts from the target element and bubbles up through their parent elements and ends when it get the document.
+when an event happens with click or something it starts from the target element and bubbles up through their parent elements and ends when it get the document.
 **work**
 when a event happens by click or something and then it starts bubbling until reach the document
 it can be stop by using stopPropagation()/stopImmediatePropagation().

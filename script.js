@@ -15,7 +15,6 @@ getElement('card-container').addEventListener('click', function (e) {
         const availableCoin = callBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].children[1].children[1].children[0];
         
         const textCoin = availableCoin.innerText;
-        // console.log(availableCoin);
         const numberOfCoin = Number(textCoin);
         if (numberOfCoin < 20) {
             alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে ।')
@@ -29,11 +28,10 @@ getElement('card-container').addEventListener('click', function (e) {
         const cardSub = callBtn.parentNode.parentNode.parentNode.children[0].innerText;
         const cardNumber = callBtn.parentNode.parentNode.parentNode.children[2].innerText;
         alert('📞 Calling '+cardSub+' '+cardNumber )
-        // console.log(callBtn);
         const appnedRightContainer = getElement('apend-element');
         const newCard = document.createElement('div');
         newCard.innerHTML = `
-<div class="flex justify-between p-6 mb-2 items-center bg-[#FAFAFA] rounded-md">
+            <div class="flex justify-between p-6 mb-2 items-center bg-[#FAFAFA] rounded-md">
                 <div>
                     <h2>${cardSub}  </h2>
                     <span class="text-[#5C5C5C]">${cardNumber}</span>
@@ -57,7 +55,6 @@ getElement('card-container').addEventListener('click', function (e) {
         console.log(numberOfHeart);
         const totalHeart = numberOfHeart + 1;
         availableHeart.innerText = totalHeart
-        // console.log(totalHeart);
 
 
 
@@ -76,7 +73,6 @@ getElement('card-container').addEventListener('click', function (e) {
 
         const totalCopy = numberOfCopy + 1;
         availableCopy.innerText = totalCopy
-        // console.log(totalHeart);
         const findCopytext = copyBtn.parentNode.parentNode.parentNode.children[2];
         const cardNumber = findCopytext.innerText;
         alert('নম্বর কপি হয়েছে : ' +cardNumber)
